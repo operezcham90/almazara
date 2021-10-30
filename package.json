@@ -1,16 +1,15 @@
 {
-  "name": "adonis-fullstack-app",
-  "version": "4.1.0",
+  "name": "almazara",
+  "version": "0.0.1",
   "adonis-version": "4.1.0",
-  "description": "The fullstack application boilerplate for Adonisjs",
-  "main": "index.js",
+  "description": "Backend application",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "node ace test"
+    "test": "node ace.js test"
   },
   "keywords": [
-    "adonisjs",
-    "adonis-app"
+    "almazara"
   ],
   "author": "",
   "license": "UNLICENSED",
