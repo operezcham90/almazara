@@ -13,9 +13,9 @@
 |
 */
 
-const { Ignitor } = require('@adonisjs/ignitor')
+const { Ignitor } = require('@adonisjs/ignitor');
 
 new Ignitor(require('@adonisjs/fold'))
   .appRoot(__dirname)
   .fireAce()
-  .catch(console.error)
+  .catch(console.error);
