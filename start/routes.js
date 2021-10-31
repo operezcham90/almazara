@@ -28,3 +28,11 @@ Route.get('/👤', () => {
         '💬': 'all good'
     };
 });
+
+Route.get('/user', () => {
+    return {
+        '👤': 'supercerealoso',
+        '✅': 'true',
+        '💬': 'all good'
+    };
+});
