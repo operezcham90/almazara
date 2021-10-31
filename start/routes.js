@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /*
 |--------------------------------------------------------------------------
@@ -16,11 +16,11 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route');
 
-Route.get('/').render('index');
-/*Route.get('/👤', () => {
+Route.get('/').render('root');
+Route.get('/👤', () => {
     return {
         '👤': 'supercerealoso',
         '✅': 'true',
         '💬': 'all good'
     };
-});*/
+});
