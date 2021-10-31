@@ -39,6 +39,64 @@
     </div>
     <div class="row">
       <div class="col-md-8">
+
+        <div class="card bg-transparent border border-light text-white">
+          <div class="card-body">
+            <h3 id="post_👤" class="card-title">Crear Usuario</h3>
+            <p class="card-text">
+              POST
+              <input type="text" class="form-control" id="validationCustom01"
+                placeholder="https://almazara.herokuapp.com/👤" value="https://almazara.herokuapp.com/👤" required>
+            </p>
+            <h4 class="card-subtitle">Solicitud</h4>
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th scope="col" width="20%">Campo</th>
+                  <th scope="col" width="80%">Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">👤</th>
+                  <td>Nombre de usuario</td>
+                </tr>
+                <tr>
+                  <th scope="row">📧</th>
+                  <td>Dirección de correo electrónico</td>
+                </tr>
+                <tr>
+                  <th scope="row">🔑</th>
+                  <td>Clave secreta</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4 class="card-subtitle">Respuesta</h4>
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th scope="col" width="20%">Campo</th>
+                  <th scope="col" width="80%">Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">👤</th>
+                  <td>Nombre de usuario</td>
+                </tr>
+                <tr>
+                  <th scope="row">✅</th>
+                  <td>Solicitud exitosa</td>
+                </tr>
+                <tr>
+                  <th scope="row">💬</th>
+                  <td>Mensaje de la respuesta</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
         <div class="card bg-transparent border border-light text-white">
           <div class="card-body">
             <h3 id="post_🔒" class="card-title">Inicio de Sesión</h3>
@@ -91,10 +149,14 @@
             </table>
           </div>
         </div>
+
       </div>
       <div class="col-md-4 d-none d-md-block">
         <h3>Contenidos</h3>
         <div class="list-group">
+          <a href="post_👤" class="btn btn-outline-light" role="button">
+            Crear Usuario
+          </a>
           <a href="#post_🔒" class="btn btn-outline-light" role="button">
             Inicio de Sesión
           </a>
