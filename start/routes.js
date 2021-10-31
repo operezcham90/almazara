@@ -17,10 +17,10 @@
 const Route = use('Route');
 
 Route.get('/').render('index');
-Route.get('/👤', () => {
+/*Route.get('/👤', () => {
     return {
         '👤': 'supercerealoso',
         '✅': 'true',
         '💬': 'all good'
     };
-});
+});*/
