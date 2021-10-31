@@ -21,7 +21,7 @@ Route.get('/', async ({ view }) => {
     return html;
 });
 
-Route.get(encodeURIComponent('/👤'), () => {
+Route.get(encodeURIComponent('👤'), () => {
     return {
         '👤': 'supercerealoso',
         '✅': 'true',
