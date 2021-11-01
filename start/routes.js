@@ -24,15 +24,7 @@ Route.get('/', async ({ view }) => {
 Route.get(encodeURIComponent('👤'), () => {
     return {
         '👤': 'supercerealoso',
-        '✅': 'true',
-        '💬': 'all good'
-    };
-});
-
-Route.get('/user', () => {
-    return {
-        '👤': 'supercerealoso',
-        '✅': 'true',
-        '💬': 'all good'
+        '✅': true,
+        '💬': ''
     };
 });
