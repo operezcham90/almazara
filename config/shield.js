@@ -141,5 +141,11 @@ module.exports = {
       path: '/',
       maxAge: 7200
     }
+  },
+  hsts: {
+    enabled: true,
+    maxAge: '180 days',
+    includeSubDomains: true,
+    preload: false,
   }
 }
