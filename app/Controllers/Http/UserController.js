@@ -8,8 +8,7 @@ class UserController {
         const user = await User.findBy('username', username);
         return response.json({
             '👤': username,
-            '✅': !!user,
-            '💬': ''
+            '✅': !!user
         });
     }
 }
