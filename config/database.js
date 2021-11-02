@@ -70,6 +70,11 @@ module.exports = {
   */
   pg: {
     client: 'pg',
-    connection: Env.get('DATABASE_URL', '') + '?ssl=true'
+    connection: {
+      connectionString: Env.get('DATABASE_URL', ''),
+      ssl: {
+        rejectUnauthorized: false
+      }
+    }
   }
 };
