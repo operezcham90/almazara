@@ -70,8 +70,6 @@ module.exports = {
   */
   pg: {
     client: 'pg',
-    connection: {
-      connection: Env.get('DATABASE_URL', '')
-    }
+    connection: Env.get('DATABASE_URL', '')
   }
 };
