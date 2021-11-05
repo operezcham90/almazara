@@ -1,9 +1,10 @@
 'use strict';
 
 class MainController {
-    async root({ view }) {
-        const html = await view.render('root');
-        return html;
+    async root({ response }) {
+        return response.json({
+            '✅': true
+        });
     }
 }
 
