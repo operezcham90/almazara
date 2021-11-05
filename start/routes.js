@@ -16,9 +16,6 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route');
 
-Route.get('/', async ({ view }) => {
-    const html = await view.render('root');
-    return html;
-});
+Route.get('/', 'MainController.root');
 
 Route.get(encodeURIComponent('👤'), 'UserController.get');
