@@ -12,7 +12,7 @@ class MainController {
         response.header('Content-Security-Policy', "img-src 'self'")
         response.header('Content-type', 'image/x-icon')
         const img = await fs.promises.readFile('./resources/favicon.ico')
-        response.send(img.contents)
+        response.send(img)
     }
 }
 

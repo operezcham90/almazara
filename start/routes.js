@@ -17,6 +17,6 @@
 const Route = use('Route');
 
 Route.get('/', 'MainController.root');
-Route.get('favicon.ico', 'MainController.icon')
+Route.get('/favicon.ico', 'MainController.icon')
 
 Route.get(encodeURIComponent('👤'), 'UserController.get');
