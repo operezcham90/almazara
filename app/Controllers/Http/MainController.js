@@ -10,8 +10,8 @@ class MainController {
     }
     async icon({ response }) {
         response.header('Content-Security-Policy', "img-src 'self'")
-        const img = fs.createReadStream('./resources/favicon.ico')
-        response.stream(img)
+        const img = await fs.promises.readFile('./resources/favicon.ico')
+        response.send(img.contents)
     }
 }
 
