@@ -6,6 +6,11 @@ class MainController {
             '✅': true
         });
     }
+    async icon({ response }) {
+        response.header('Content-Security-Policy', "img-src 'self'")
+        const img = fs.createReadStream('./resources/favicon.ico')
+        response.stream(img)
+    }
 }
 
 module.exports = MainController;
