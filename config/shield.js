@@ -30,7 +30,8 @@ module.exports = {
     |
     */
     directives: {
-      defaultSrc: ['self', '@nonce', Env.get('APP_URL')]
+      defaultSrc: ['self', '@nonce'],
+      imgSrc: ['self']
     },
     /*
     |--------------------------------------------------------------------------
