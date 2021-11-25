@@ -1,5 +1,7 @@
 'use strict';
 
+const Env = use('Env');
+
 module.exports = {
   /*
   |--------------------------------------------------------------------------
@@ -28,7 +30,7 @@ module.exports = {
     |
     */
     directives: {
-      defaultSrc: ['self', '@nonce']
+      defaultSrc: ['self', '@nonce', Env.get('APP_URL')]
     },
     /*
     |--------------------------------------------------------------------------
