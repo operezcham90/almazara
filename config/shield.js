@@ -28,8 +28,8 @@ module.exports = {
     |
     */
     directives: {
-      defaultSrc: ["'none'"],
-      imgSrc: ["'self'"]
+      defaultSrc: ['none'],
+      imgSrc: ['self']
     },
     /*
     |--------------------------------------------------------------------------
