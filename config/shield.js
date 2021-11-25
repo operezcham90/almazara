@@ -28,7 +28,7 @@ module.exports = {
     |
     */
     directives: {
-      defaultSrc: ["'self'"]
+      defaultSrc: ['self', '@nonce']
     },
     /*
     |--------------------------------------------------------------------------
