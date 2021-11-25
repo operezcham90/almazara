@@ -8,12 +8,6 @@ class MainController {
             '✅': true
         });
     }
-    async icon({ response }) {
-        response.header('Content-Security-Policy', 'img-src ' + process.env.APP_URL)
-        response.header('Content-type', 'image/x-icon')
-        const img = await fs.promises.readFile('./resources/favicon.ico')
-        response.send(img)
-    }
 }
 
 module.exports = MainController;

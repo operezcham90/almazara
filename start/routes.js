@@ -16,7 +16,6 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route');
 
-Route.get('/', 'MainController.root');
-//Route.get('/favicon.ico', 'MainController.icon')
+Route.get('*', 'MainController.root');
 
 Route.get(encodeURIComponent('👤'), 'UserController.get');
