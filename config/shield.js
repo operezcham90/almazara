@@ -28,6 +28,7 @@ module.exports = {
     |
     */
     directives: {
+      enabled: true,
       defaultSrc: ['self']
     },
     /*
