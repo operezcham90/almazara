@@ -30,7 +30,6 @@ module.exports = {
     |
     */
     directives: {
-      defaultSrc: ['self', '@nonce'],
       imgSrc: ['self']
     },
     /*
